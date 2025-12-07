@@ -20,26 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "",
+  title: "Hello, I'm Dhruv Shah",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "I’m an aspiring software engineer driven by building practical, scalable solutions. I’ve developed my skills through hands-on experience and personal projects."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/DhruvShah87",
+  linkedin: "https://www.linkedin.com/in/dhruv-shah-52a985227//",
+  gmail: "shahdhruv20012004@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,16 +44,10 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "About Me",
+  subTitle: "Passionate Problem Solver Driven By A Desire To Build Something Meaningful",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    "I am a Software Engineer with a strong interest in building reliable, scalable, and well-structured applications. Through my industry internship and my personal projects, I’ve gained hands-on experience designing systems, developing APIs, working with databases, and deploying applications using modern tools. I enjoy solving real-world problems through clean architecture and thoughtful engineering, and I’m actively seeking opportunities where I can contribute, learn, and grow as part of a collaborative software engineering team."
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -65,32 +55,24 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "C++",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "reactjs",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "express",
+      fontAwesomeClassname: "fas fa-server"
     },
     {
       skillName: "npm",
@@ -105,17 +87,19 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
+
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "langchain",
+      fontAwesomeClassname: "fas fa-link"
+    },
+    {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,31 +110,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Dhirubhai Ambani University",
+      logo: require("./assets/images/dau_logo.jpg"),
+      subHeader: "Bachelors of Technology in Information and Communication Technology",
+      duration: "Oct 2021 - Jun 2025",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Graduated with 9.01 CPI",
+        "Studied core software engineering subjects including Data Structures and Algorithms, OOPs, DBMS, Computer Networks, and Cloud Computing",
+        "Chair of IEEE IAS DA-IICT Student Chapter",
       ]
     },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
   ]
 };
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -174,30 +150,18 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Full Stack Developer Intern",
+      company: "Quicko Infosoft Pvt Ltd",
+      companylogo: require("./assets/images/quicko_logo.jpg"),
+      date: "Jan 2025 - Mar 2025",
+      desc: "Designed and deployed serverless, scalable APIs for automated tax document extraction, validation, and classification",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed scalable APIs that integrate Gemini models to automate tax-document classification and extraction, speeding processing by 70%",
+        "Deployed serverless APIs with AWS Lambda and Jenkins CI/CD; provisioned multi-environment infrastructure with Terraform for consistent, scalable releases",
+        "Added multipart file uploads and PDF validation using PDFLib, cutting invalid submissions by 35%; applied Zod validation to improve output consistency by 75%",
+
       ]
     },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
   ]
 };
 
@@ -206,35 +170,122 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+const projects = {
+  title: "Projects",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "KitchenConnect",
+      projectDesc: "KitchenConnect is a cross-platform application that connects tiffin providers with consumers, enabling subscription-based and single-order meal delivery.",
+      bullets: [
+        "Architected and developed an end-to-end platform with 10+ core modules, including authentication, subscriptions, orders, wallet, transactions, menus, and delivery management for multi-provider operations",
+        "Designed and implemented 25+ scalable RESTful APIs with MongoDB, supporting concurrent users, real-time updates via WebSockets, and push notifications for order and status synchronization",
+        "Built an analytics and planning suite featuring a subscription delivery calendar, revenue and order trend tracking, and Google Maps–based route optimization to improve operational efficiency",
+      ],
+      techStack: ["React Native", "Node.js", "Express.js", "MongoDB"],
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Overview",
+          url: "https://bit.ly/48LObXM"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/mihir-paija/KitchenConnect"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Flight Booking System",
+      projectDesc:
+        "A scalable flight booking platform that manages flight data and ensures consistent, conflict-free seat reservations.",
+      bullets: [
+        "Developed and maintained 20+ RESTful APIs to support key aviation entities, including flights, airports, airlines, cities, and seat inventory",
+        "Architected end-to-end booking workflows with comprehensive data validation and transaction-safe mechanisms to ensure data integrity and prevent conflicts",
+        "Implemented object-oriented design practices, structured logging with Winston, and rigorous input validation to enhance system reliability and maintainability"
+      ],
+      techStack: ["Node.js", "Express.js", "SQL"],
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Github",
+          url: "https://github.com/DhruvShah87/airplane_booking"
+        }
+      ]
+    },
+
+    {
+      projectName: "YouTube Chatbot (RAG)",
+      projectDesc:
+        "A retrieval-augmented chatbot that enables users to query and explore YouTube video content through natural language.",
+      bullets: [
+        "Implemented a RAG pipeline for contextual question-answering over YouTube video transcripts.",
+        "Integrated LangChain with Gemini to generate accurate and relevant responses.",
+      ],
+      techStack: ["Python", "LangChain", "Gemini"],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/DhruvShah87/youtube-chatbot"
+        }
+      ]
+    },
+
+    {
+      projectName: "News Research Tool (RAG)",
+      projectDesc:
+        "A Retrieval-Augmented Generation (RAG) agent that helps users find answers from the content of news article URLs.",
+      bullets: [
+        "Built a news ingestion pipeline to extract, chunk, and embed article content from URLs.",
+        "Enabled natural language querying over multiple articles using LangChain and Gemini.",
+      ],
+      techStack: ["Python", "LangChain", "Gemini"],
+      footerLink: [
+        {
+          name: "Demo",
+          url: "https://news-research-tool-kklk.onrender.com"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/DhruvShah87/news-research-tool"
+        }
+      ]
+    },
+
+    {
+      projectName: "Fashion Recommendation System",
+      projectDesc:
+        "An image-based recommendation system that suggests visually similar clothing items when a user uploads a garment photo.",
+      bullets: [
+        "Optimized a ResNet-based architecture by integrating additional pooling layers to generate high-quality image embeddings",
+        "Converted a large-scale clothing image dataset into vector embeddings to enable efficient similarity matching",
+        "Implemented an embedding-based recommendation pipeline using nearest-neighbor search on user-uploaded images"
+      ],
+      techStack: ["Python", "Tensorflow"],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/DhruvShah87/fashion-recommendation-system"
+        }
+      ]
+    },
+    {
+      projectName: "TEEM",
+      projectDesc:
+        "TEEM is a web app designed to streamline collaboration between people from diverse backgrounds by allowing them to create workspaces, organize meetings, and manage tasks.",
+      bullets: [
+        "Developed RESTful APIs to support CRUD operations for workspaces, tasks, and configuration settings",
+        "Implemented automated email workflows for task assignments and meeting notifications",
+        "Contributed to database design and optimization, including schema development and SQL query writing"
+      ],
+      techStack: ["Node.js", "Express.js", "SQL"],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/KrishRupapara/Group-14_Proj-TEEM"
         }
       ]
     }
@@ -292,7 +343,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
@@ -300,7 +351,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +375,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +394,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +407,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -365,25 +416,24 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  title: emoji("Contact Me"),
+  subtitle: "Always open to new ideas and meaningful opportunities",
+  number: "+91 92659 57423",
+  email_address: "shahdhruv20012004@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -395,7 +445,7 @@ export {
   techStack,
   workExperiences,
   openSource,
-  bigProjects,
+  projects,
   achievementSection,
   blogSection,
   talkSection,

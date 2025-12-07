@@ -1,6 +1,7 @@
 @import "../../_globalColor";
 
 .experience-card {
+  max-width: 900px;
   position: relative;
   background-color: $lightBackground2;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;

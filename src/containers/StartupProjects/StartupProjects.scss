@@ -7,17 +7,27 @@
 }
 .card-title {
   color: $titleColor;
-  font-size: 22px;
+  font-size: 30px;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5rem;
 }
+
+.project-bullets{
+  text-align: left;
+  color: $cardSubtitle;
+  font-size: 16px;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+}
+
 .project-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: $lightBackground2;
@@ -25,7 +35,10 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
+  margin: 1rem 0;      /* top & bottom spacing between rows */
+  min-height: 500px;
 }
+
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   -webkit-transition: all 0.3s ease;
@@ -41,8 +54,14 @@
 }
 
 .project-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes up part to top & down part to bottom */
+  align-items: center;           /* horizontal centering */
   text-align: center;
+  height: 100%;                  /* important for space-between to work */
 }
+
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
@@ -59,27 +78,80 @@
 }
 
 .projects-container {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+
 }
 
-.project-card-footer span.project-tag {
-  background: $buttonColor;
+/* Small screens (mobile) */
+.projects-container {
+  grid-template-columns: 1fr;
+}
+
+/* Big screens (tablets & desktop) */
+@media (min-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.project-detail-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+span.project-tech {
+  background: rgba(108, 99, 255, 0.12);  /* soft purple tint */
+  color: #6c63ff;                         /* clean purple text */
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin: 0 0.4rem 0.4rem 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-footer  {
+  display: flex;
+  flex: 1;
   color: $lightBackground3;
-  vertical-align: middle;
   align-items: center;
   border-radius: 4px;
-  display: inline-flex;
   font-size: 0.75rem;
   height: 2em;
   justify-content: center;
-  white-space: nowrap;
   line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+span.project-tag {
+  background: linear-gradient(135deg, #6c63ff, #8f8aff); /* rich purple gradient */
+  color: #ffffff;
+  border-radius: 999px; /* full pill shape */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  height: 2.1em;
+  padding: 0 1rem;
+  margin: 0 0.4rem 0.5rem 0;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+span.project-tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(108, 99, 255, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -87,4 +159,9 @@
     font-size: 16px;
     text-align: center;
   }
+}
+
+.skills-heading{
+  text-align: center;
+  margin-bottom: 4rem;
 }
